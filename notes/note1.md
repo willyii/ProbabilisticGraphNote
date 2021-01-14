@@ -60,7 +60,9 @@ There are two types of graph:
 
 - Bayesian Network: using directed edges, like top left figure
 - Markov Network: using undirected edges, like top right figure
-
+  
+  
+  
 #### 2.2 Representation, Inference and Learning 
 
 - This framework allow the distribution to be written down tractably. Even the
@@ -73,7 +75,7 @@ There are two types of graph:
 These three component- representation, inference and learning - are critical
 components in constructing a intelligent system.
 
-### RoadMap
+### 3. RoadMap  
 
 ![](imgs/note1/roadmap.png)
 
