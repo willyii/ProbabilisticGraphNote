@@ -47,8 +47,8 @@ graph.
 
 - This graph is the compact representation of a set of independencies that hold
   in the distribution. For example, like the graph above, we can know that Flu
-  and Hayfever are independent given Season. Therefore, $$P(Hayfever, Flu |
-  Season) = P(Hayfever|Season) P(Flu|Season)$$
+  and Hayfever are independent given Season. Therefore, 
+  $$P(Hayfever, Flu | Season) = P(Hayfever|Season) P(Flu|Season)$$
   
 - Graph defines a skeleton for compactly representation a high-dimensional
   distribution. It can break a complex joint distribution into simpler one. Like
