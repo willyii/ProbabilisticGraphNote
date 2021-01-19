@@ -1,9 +1,9 @@
-## Introduction
+# Introduction
 
 This is very first note, mainly content from chapter 1 of book. This chapter
 about introduce what this book about and suggested roadmap of reading this book.
 
-### 1. Motivation
+## 1. Motivation
 
 There a type of question can be solved using reason (take available information
 and reach conclusions). This book describe a framework that can be used to allow
@@ -19,7 +19,7 @@ The key property of declarative representation is the separation of knowledge
 and reasoning. Which means we can developed a suite of algorithms that can be
 applied to any model in different domain, like medical and speech recognition.
 
-### 2. Structured Probabilistic Models
+## 2. Structured Probabilistic Models
 
 This book described general purpose framework for constructing and using
 probabilistic models of complex system.
@@ -33,7 +33,7 @@ Our task is to reason probabilistically about the value of one or more random
 variables. In order to do so, we need to construct **joint distribution** over
 space of possible assignment of a set of random variables.
 
-#### 2.1 Probabilistic Graphical Models
+### 2.1 Probabilistic Graphical Models
 
 ![](imgs/note1/graph_representation.png)
 
@@ -48,7 +48,7 @@ graph.
 - This graph is the compact representation of a set of independencies that hold
   in the distribution. For example, like the graph above, we can know that Flu
   and Hayfever are independent given Season. Therefore, 
-  $$P(Hayfever, Flu | Season) = P(Hayfever|Season) P(Flu|Season)$$
+  $P(Hayfever, Flu | Season) = P(Hayfever|Season) P(Flu|Season)$
   
 - Graph defines a skeleton for compactly representation a high-dimensional
   distribution. It can break a complex joint distribution into simpler one. Like
@@ -63,7 +63,7 @@ There are two types of graph:
   
   
   
-#### 2.2 Representation, Inference and Learning 
+### 2.2 Representation, Inference and Learning 
 
 - This framework allow the distribution to be written down tractably. Even the
   original distribution is large
@@ -75,7 +75,7 @@ There are two types of graph:
 These three component- representation, inference and learning - are critical
 components in constructing a intelligent system.
 
-### 3. RoadMap  
+## 3. RoadMap  
 
 ![](imgs/note1/roadmap.png)
 
