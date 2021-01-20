@@ -11,4 +11,4 @@ meself.
 
 [Motivation and Overview](./notes/note1.markdown)
 
-[Introduction and Basic](./notes/note2.md)
+[Introduction and Basic](./notes/note2.markdown)
