@@ -5,6 +5,7 @@
 ### Joint Distribution
 
 Assume we have three random varibles. 
+
 - Intelligence(I), we have two possible values $i^0$ and $i^1$
 - Difficulty(D), we have two possible values $d^0$ and $d^1$
 - Grade(G), we have three possible values $g^0$, $g^1$ and $g^2$
@@ -14,7 +15,7 @@ example of $P(I,D,G)$.
 
 ![](./imgs/2/chart.png)
 
-There are 2*2*3 = 12 entries in this distribution. There are total 12 parameters
+There are $2*2*3 = 12$ entries in this distribution. There are total 12 parameters
 to reprensent this distribution.
 
 **Independent parameters** are parameters whose value is not completely
