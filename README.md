@@ -9,6 +9,6 @@ meself.
 
 ## Notes
 
-[Motivation and Overview](./notes/note1.pdf)
+[Motivation and Overview](./notes/pdf/note1.pdf)
 
-[Introduction and Basic](./notes/note2.pdf)
+[Introduction and Basic](./notes/pdf/note2.pdf)
