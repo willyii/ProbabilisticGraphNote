@@ -13,3 +13,5 @@ myself.
 [Introduction and Basic](./notes/pdf/note2.pdf)
 
 [Semantics & Factorization](./notes/pdf/note3.pdf)
+
+[Independence in Bayesian Network](./notes/pdf/note4.pdf)
