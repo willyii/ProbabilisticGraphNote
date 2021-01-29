@@ -15,3 +15,5 @@ myself.
 [Semantics & Factorization](./notes/pdf/note3.pdf)
 
 [Independence in Bayesian Network](./notes/pdf/note4.pdf)
+
+[Dynamic Bayesian Network](./notes/pdf/note5.pdf)
