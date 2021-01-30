@@ -88,7 +88,7 @@ $P(X'|X) =\prod_{i=1}^nP(X_i'|Pa_{X_i'})$
 
 A dynamic Bayesian network (DBN) over $X_1...X_n$ is defined by a 
 
-- 2TBN $BN_{\leftarrow}$ over $X_1'...X_n'$
+- 2TBN $BN_{\rightarrow}$ over $X_1'...X_n'$
 - a Bayesian network $BN^{(0)}$ over $X_1^{(0)}...X_n^{(0)}$. This is initial
   state
 
@@ -96,4 +96,28 @@ For a trajectory over $0,...,T$ we define a ground (unrolled network) such that
 
 - The dependency model for $X_1^{(0)}...X_n^{(0)}$ is copied from $BN^{(0)}$.
 - The dependency model for $X_1^{(t)}...X_n^{(t)}$ for all $t >0 $ is copied
-  from $BN_{\leftarrow}$
+  from $BN_{\rightarrow}$
+ 
+## Hidden Markov Model
+
+Hidden Markov Model can be simply viewed as probabilistic model that has a state
+variable $S$ and a observation variable $O$. As following graph:
+
+![](../imgs/5/figure1.png)
+
+Therefore, we have a transition model that tell us how states change to next
+state and a observation model that can get observation we want from specific
+state.
+
+Then we can unroll above 2TBN. We can get structure like following graph. It
+should be noticed that $S_1$ here is not random variable. It is assignment of
+$S$. The assignment of $S$ might be change over time.
+
+![](../imgs/5/figure2.png)
+
+### Summary
+
+- HMMs can be viewd as a subclass of DBNs
+- HMMs seems unstructured at the level of random variables.
+- HMM structure typically manifests in sparsity and repeated elements within the
+  transition matrix
