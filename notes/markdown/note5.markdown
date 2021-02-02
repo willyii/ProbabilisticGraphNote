@@ -117,7 +117,68 @@ $S$. The assignment of $S$ might be change over time.
 
 ### Summary
 
-- HMMs can be viewd as a subclass of DBNs
+- HMMs can be viewed as a subclass of DBNs
 - HMMs seems unstructured at the level of random variables.
 - HMM structure typically manifests in sparsity and repeated elements within the
   transition matrix
+  
+## Plate Models
+
+### Modeling Repetition
+
+Image a case we toss the coin. We toss coins $k$ times and we will get $k$
+outcomes. If we use RV to represent these outcomes, we will have $k$ RVs in our
+graph. In order to avoid the repetition of this process, we can use template.
+In graph, we usually use a box to round the RV. As shown in figure. 
+
+![](../imgs/5/PlateFig1.png)
+
+Then, we can say the outcome variables is indexed by the toss $t$. This template
+can represent a set of random variables that represent $k$ coin tosses.
+
+![](../imgs/5/PlateFig2.png)
+
+One of benefits that using plate model is that we can make the parameters
+independent from the plate. Which means the RVs that from same plate can use
+same PCD parameterization.
+
+### Nested Plates
+
+Now image the student example again, we have courses $c$ and students $s$. The
+difficulty is dependents on specific course, every course has its own
+difficulty. And every student has Intelligent and Grade. 
+
+As mentioned, we can come out with two plates, first one has only difficulty
+variable, which indexed by course $c$. Second one has two variables,
+Intelligence and Grade, and its indexed by student $s$. However, we want that
+each student has different intelligence and therefore has different grade for
+different courses. Then we can use **Nested Plates** as shown in figure:
+
+![](../imgs/5/PlatFig3.png)
+
+Note: Intelligence and Grade in graph are indexed by both $s$ and $c$
+
+### Overlapping Plates
+
+Now we want the Intelligence of students has no relationship with $c$. We can
+use **Overlapping Plates** to represent: 
+
+![](../imgs/5/PlateFig4.png)
+
+### Plate Dependency Model
+
+- For a template variable $A(U_1...U_k)$:
+  - Template parents $B_1(U_1)...B_,(U_m)$, we doesn't have an index in the
+    parent that doesn't appear in the child. Which means the index for parents
+    are subset of index of child.
+  - CPD $P(A|B_1...B_m)$. This template model can represent a variable that have
+    unbounded number of parents.
+    
+### Summary
+
+- Template for an infinite set of BNs, each induced by a different set of domain
+  objects.
+- Parameters and structure are **reused** within a BN and across different BNs.
+- Models encode correlations across multiple objects, allowing collective
+  inference.
+- Multiple "languages", each with different tradeoffs in expressive power.
